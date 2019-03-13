@@ -4,7 +4,9 @@
 This is the main **Gluon** code of [阿里天池竞赛——服饰属性标签识别](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.505c3a26Oet3cf&raceId=231649). Note that this code is just a part of our final code, but provides the one of our **best single model**. Final submission is a ensemble model of two model: One is this resnet152v2 model ,and the other is the Inceptionv4 model from my teammates.
 The code is based on [hetong007's code](https://github.com/hetong007/Gluon-FashionAI-Attributes) which provides a good baseline in the competition. This is my first time to use Gluon and thanks to hetong007~
 
+Team name：时尚时尚最时尚
 Rank: 10/2950 (Season1)    17/2950 (Season2)
+
 
 ## Software:
 - ubuntu14.04，cuda8.0，cudnn6.5
@@ -21,6 +23,7 @@ Rank: 10/2950 (Season1)    17/2950 (Season2)
 - **Muti-scale train & test:** Use more scale augmentations when training and testing, especially for TTA(Test time augmentation). 
 - **mAP defination:** Define mAP by ourselves according the competetion illustrate.
 - **Random erasing:** Gluon version code defined by ourselvers.
+- **Heatmap strategy:** Find the circumscribed square of the largest connected block, framing the entire heat map area for classification finetuning.
 
 
 ## Training in a few lines
